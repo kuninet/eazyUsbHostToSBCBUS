@@ -4022,6 +4022,12 @@
 		(uuid "73da668b-6151-4b70-8a3d-effb41215b10")
 	)
 	(junction
+		(at 223.52 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86ba6e48-2b24-440a-909b-beb287a86e96")
+	)
+	(junction
 		(at 62.23 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4687,6 +4693,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 90.17) (xy 234.95 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f398dbe-1171-4955-8f84-46917f5b742c")
+	)
+	(wire
+		(pts
 			(xy 107.95 59.69) (xy 107.95 63.5)
 		)
 		(stroke
@@ -5187,6 +5203,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 90.17) (xy 227.33 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8fe3850-819b-4bf7-9cf9-26e632c1e491")
+	)
+	(wire
+		(pts
 			(xy 95.25 83.82) (xy 95.25 66.04)
 		)
 		(stroke
@@ -5344,6 +5370,16 @@
 			(type default)
 		)
 		(uuid "fb547329-7de1-42c4-97c7-3d99949af5ec")
+	)
+	(wire
+		(pts
+			(xy 234.95 90.17) (xy 234.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fccac9d0-7303-430d-a515-3e35faea847c")
 	)
 	(label "VCC-68"
 		(at 54.61 83.82 0)
@@ -7090,6 +7126,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 234.95 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7150a29e-42e2-4f34-854d-8987219c068b")
+		(property "Reference" "#PWR018"
+			(at 234.95 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84c124f9-f2cd-4b66-b841-e2009e263962")
+		)
+		(instances
+			(project "eazyUsbHostToSBCBUS"
+				(path "/b6e68644-57db-4ded-9351-d033555be6d6"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC04")
 		(at 236.22 74.93 0)
 		(unit 1)
@@ -7590,6 +7692,74 @@
 			(project "eazyUsbHostToSBCBUS"
 				(path "/b6e68644-57db-4ded-9351-d033555be6d6"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 229.87 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9e50f39-05a8-4a80-aa9c-61cbe8f55500")
+		(property "Reference" "R4"
+			(at 229.87 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 229.87 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 229.87 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13c160f6-f5f6-4f0e-8d85-34cb483f3ed2")
+		)
+		(pin "2"
+			(uuid "d5191dce-efa4-4755-8edb-b1023eeb9937")
+		)
+		(instances
+			(project "eazyUsbHostToSBCBUS"
+				(path "/b6e68644-57db-4ded-9351-d033555be6d6"
+					(reference "R4")
 					(unit 1)
 				)
 			)
